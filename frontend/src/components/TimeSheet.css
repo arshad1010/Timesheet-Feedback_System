@@ -1,0 +1,52 @@
+.save {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(8, 24, 95);
+    color:white;
+    border: none;
+    padding: 5px 10px; 
+    font-size: 16px;
+}
+.headings {
+    width: 100%;
+}
+.header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Adjust styles for the navigation buttons ("<" and ">") */
+.change-week {
+    padding: 5px 10px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: rgb(8, 24, 95);
+    color: #fff; /* Example text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.change-week:hover {
+    background-color: #0056b3; /* Example background color on hover */
+}
+
+/* Adjust styles for the add and remove buttons ("+" and "-") */
+.add,
+.remove {
+    padding: 5px 10px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: rgb(8, 24, 95);
+    color: #fff; /* Example text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add:hover,
+.remove:hover {
+    background-color: #0056b3;/* Example background color on hover */
+}
+
+
+  

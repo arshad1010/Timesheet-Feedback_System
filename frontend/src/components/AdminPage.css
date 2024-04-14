@@ -1,0 +1,48 @@
+.admin-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+  }
+  
+  .admin-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .admin-page button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .admin-page button:hover {
+    background-color: #0056b3;
+  }
+  
+  .admin-page button:focus {
+    outline: none;
+  }
+
+  .side-bar {
+    top: 0;
+    position: sticky;
+    background-color: rgb(8, 24, 95);
+    color: white;
+    height: 100vh; /* Ensure sidebar takes full height of viewport */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds viewport height */
+    z-index: 100; /* Ensure sidebar is above other content */
+  }
+  
+
+  

@@ -1,0 +1,42 @@
+/* Custom CSS for User Feedback Page */
+.container {
+    margin-top: 20px;
+  }
+  
+  .card {
+    margin-bottom: 10px;
+  }
+
+/* 
+  .card-body {
+    display: flex;
+  } */
+  
+  .modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-footer {
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .modal-title {
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    background-color: rgb(8, 24, 95);
+  }
+  

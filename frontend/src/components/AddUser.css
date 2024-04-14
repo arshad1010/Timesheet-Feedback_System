@@ -1,0 +1,72 @@
+.add-user-page {
+    max-width: 400px;
+    margin: 70px auto;
+    padding: 40px;
+    border-radius: 8px;
+    margin-top: 70px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .options {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .options label {
+    display: block;
+    padding-right: 20px;
+  }
+
+  .radio-group input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .add-user-page h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .add-user-page form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-user-page label {
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .add-user-page input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .add-user-page button {
+    padding: 12px 20px;
+    background-color: rgb(8, 24, 95);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-user-page button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-user-page button:focus {
+    outline: none;
+  }
+
+  
+  

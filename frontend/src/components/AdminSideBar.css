@@ -1,0 +1,26 @@
+
+ul {
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: start;
+    height: 490px;
+    margin-top: 0;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+.logout-btn {
+    display: flex;
+    align-items:center ;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ li :hover {
+    color: rgb(235, 68, 68);
+ }
+
