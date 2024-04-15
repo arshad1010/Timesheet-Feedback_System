@@ -5,8 +5,12 @@ import './Dashboard.css';
 import { toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from 'react-router-dom';
 
 function Dashboard() {
+
+    const navigate = useNavigate();
+
     const [users, setUsers] = useState([]);
     const [selectedUserId, setSelectedUserId] = useState(null);
     const [timesheetData, setTimesheetData] = useState(null);
@@ -28,6 +32,23 @@ function Dashboard() {
 
         fetchUsers();
     }, []);
+
+    useEffect(() => {
+        // Check if user details are available in local storage
+        const userData = localStorage.getItem('user');
+        console.log('from home page')
+        if (!userData) {
+          // Redirect to login page or another appropriate location if user details are not available
+          console.log('unauthorized access')
+          navigate('/');
+          toast.error("Make sure to login")
+        }
+        }, [navigate]);
+    
+        if (!localStorage.getItem('user')) {
+          return null;
+        }
+
 
     const handleDeleteUser = async (userId) => {
         try {

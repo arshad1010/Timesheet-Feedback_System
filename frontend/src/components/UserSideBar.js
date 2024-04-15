@@ -4,6 +4,9 @@ import './UserSideBar.css'
 import axios from 'axios'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import { toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function UserSideBar() {
 
@@ -43,6 +46,7 @@ function UserSideBar() {
         // Clear user data from local storage
         localStorage.removeItem('user');
         localStorage.removeItem('token');
+
         navigate('/')
     };
 
@@ -68,6 +72,7 @@ function UserSideBar() {
                         <i class="bi bi-box-arrow-right"></i>
                     </div>
                 </li>
+                <ToastContainer />
             </ul>
     )
 }

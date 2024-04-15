@@ -22,7 +22,10 @@ function AddUser() {
         toast.success('User Added Successfully');
         console.log(result)
       })
-      .catch(err => console.log(err));
+      .catch(err => {
+        console.log(err);
+        toast.error("Username or Email already exists")
+      })
 
     // Clear form fields after submission
     setUsername('');
